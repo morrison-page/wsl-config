@@ -1,3 +1,5 @@
+#!/bin/bash
+
 docker build -t fedora-wsl -f Containerfile .
 docker create --name fedora-wsl-container fedora-wsl
 docker export fedora-wsl-container -o fedora-wsl.tar
